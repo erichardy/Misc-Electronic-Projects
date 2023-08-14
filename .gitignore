@@ -1,7 +1,7 @@
 TransistorTester-backups/*.zip
 \#auto_saved_files\#
 TransistorTester/TransistorTester-backups/
-_autosave*
+*_autosave*
 fp-info-cache
 *.swp
 *.zip
