@@ -6,3 +6,5 @@ fp-info-cache
 *.swp
 *.zip
 TransistorsCompare/TransistorsCompare-backups
+f.*
+TransistorCurveTracer/TransistorCurveTracer-backups
