@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"name": "HomeSensors",
+			"path": "."
+		},
+		{
+			"path": "../../thermostat"
+		}
+	],
+	"settings": {}
+}
