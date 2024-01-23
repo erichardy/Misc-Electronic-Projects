@@ -168,9 +168,9 @@ void loop() {
   /* Lit la température ambiante à ~1Hz */
   if (getTemperature(&temperature, true) != READ_OK) {
     Serial.println(F("Erreur de lecture du capteur"));
-    return;
+    // return;
   }
-  motionSensorCurrentState = digitalRead(MOTION_SENSOR_PIN);
+  // motionSensorCurrentState = digitalRead(MOTION_SENSOR_PIN);
   display.clearDisplay();
   display.setCursor(0,0);
   tempC = getExternalTemp();
@@ -183,5 +183,5 @@ void loop() {
   display.display();
   // jj -= .32;
   xl += 2;
-  delay(10);
+  delay(1000);
 }
