@@ -1,5 +1,24 @@
 #include <Arduino.h>
 
+
+#include <max6675.h>
+/*
+//câblage module spi max6675 :
+                                  //GND --> Gnd masse Arduino
+                                  //Vcc -->(+5V) sur pin 2 digital en Output & High
+                                  //DO Data Output --> pin 5
+                                  //CS Chip Select --> pin 4
+                                  //CLK clock --> pin 3
+*/
+
+int thermoDO = 5;
+int thermoCS = 4;
+int thermoCLK = 3; 
+float temp;
+
+MAX6675 thermocouple(thermoCLK, thermoCS, thermoDO);
+
+
 #include <SPI.h>
 #include <SD.h>
 File myFile;
@@ -125,6 +144,8 @@ void loop(void)
   // i++;
   // demoTFT();
   testSD();
+  temp = thermocouple.readCelsius();
+  Serial.println(temp);
   delay(5000);
 }
 
