@@ -1,14 +1,10 @@
 {
 	"folders": [
 		{
-			"name": "HomeSensors",
 			"path": "."
 		},
 		{
-			"path": "../../thermostat"
-		},
-		{
-			"path": "../ovenTemperture"
+			"path": "../heartSensor"
 		}
 	],
 	"settings": {}
