@@ -100,10 +100,10 @@ void setup(void)
     Serial.println("initialization done.");
     lcd.println("initialization done.");
     //
-    SD.remove("temps.csv");
+    // SD.remove("temps.csv");
     fileTemps = SD.open("temps.csv", FILE_WRITE);
     if (fileTemps) {
-      fileTemps.println("Millis|Temp|Num");
+      fileTemps.println("Sec|Temp|Num");
       fileTemps.close();
     }
     //
@@ -135,6 +135,6 @@ void loop(void)
   lcd.setCursor(0, 0);
   lcd.print(line);
   i++;
-  delay(5000);
+  delay(300000);
 }
 
